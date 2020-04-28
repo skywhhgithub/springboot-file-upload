@@ -12,6 +12,7 @@ import java.io.IOException;
 @Controller
 public class FileUploadController {
 
+    // 默认首页  例如：访问：http://localhost:8080/  就会跳转至：index.html
     @RequestMapping("/")
     public String index() {
         return "index";
