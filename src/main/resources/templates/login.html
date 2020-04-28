@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form class="form-horizontal" action="upload" enctype="multipart/form-data" method="post">
+        userName:<label th:text="#{login.userName}">userName</label>
+
+        <a th:href="@{/login(l='zh_CN')}">中文</a>
+        <a th:href="@{/login(l='en_US')}">English</a>
+    </form>
+</body>
+</html>
